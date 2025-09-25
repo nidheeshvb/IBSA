@@ -1,0 +1,130 @@
+// .container,
+// .container-fluid,
+// .container-lg,
+// .container-md,
+// .container-sm,
+// .container-xl,
+// .container-xxl,
+// .container-xxxl {
+//   padding-left: 30px;
+//   padding-right: 30px;
+//   // @include media-breakpoint-up(sm) {
+//   //   padding-left: 1.5rem;
+//   //   padding-right: 1rem;
+//   // }
+
+//   // @include media-breakpoint-up(md) {
+//   //   padding-left: 30px;
+//   //   padding-right: 1.5rem;
+//   // }
+
+//   @include media-breakpoint-up(md) {
+//     padding-left: 30px;
+//     padding-right: 30px;
+//   }
+
+//   @include media-breakpoint-up(lg) {
+//     padding-left: 60px;
+//     padding-right: 60px;
+//   }
+//   @include media-breakpoint-up(xl) {
+//     padding-left: 90px;
+//     padding-right: 90px;
+//   }
+//   @include media-breakpoint-up(xxl) {
+//     padding-left: 120px;
+//     padding-right: 120px;
+//   }
+// }
+
+// img {
+//   max-width: 100%;
+//   height: auto;
+// }
+
+// // fonts
+// $font-arabic: "Makdessi", sans-serif;
+// @font-face {
+//   font-family: "Makdessi";
+//   src: url("../fonts/Makdessi-Black.woff2") format("woff2"),
+//     url("../fonts/Makdessi-Black.woff") format("woff"),
+//     url("../fonts/Makdessi-Black.ttf") format("truetype");
+//   font-weight: 900;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Makdessi";
+//   src: url("../fonts/Makdessi-ExtraBold.woff2") format("woff2"),
+//     url("../fonts/Makdessi-ExtraBold.woff") format("woff"),
+//     url("../fonts/Makdessi-ExtraBold.ttf") format("truetype");
+//   font-weight: 800;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Makdessi";
+//   src: url("../fonts/Makdessi-Bold.woff2") format("woff2"),
+//     url("../fonts/Makdessi-Bold.woff") format("woff"),
+//     url("../fonts/Makdessi-Bold.ttf") format("truetype");
+//   font-weight: bold;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Makdessi Hairline";
+//   src: url("../fonts/Makdessi-Light.woff2") format("woff2"),
+//     url("../fonts/Makdessi-Light.woff") format("woff"),
+//     url("../fonts/Makdessi-Light.ttf") format("truetype");
+//   font-weight: 300;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Makdessi";
+//   src: url("../fonts/Makdessi-Medium.woff2") format("woff2"),
+//     url("../fonts/Makdessi-Medium.woff") format("woff"),
+//     url("../fonts/Makdessi-Medium.ttf") format("truetype");
+//   font-weight: 500;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Makdessi Hairline";
+//   src: url("../fonts/Makdessi-Hairline.woff2") format("woff2"),
+//     url("../fonts/Makdessi-Hairline.woff") format("woff"),
+//     url("../fonts/Makdessi-Hairline.ttf") format("truetype");
+//   font-weight: 100;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Makdessi";
+//   src: url("../fonts/Makdessi-Thin.woff2") format("woff2"),
+//     url("../fonts/Makdessi-Thin.woff") format("woff"),
+//     url("../fonts/Makdessi-Thin.ttf") format("truetype");
+//   font-weight: 100;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: "Makdessi";
+//   src: url("../fonts/Makdessi-Regular.woff2") format("woff2"),
+//     url("../fonts/Makdessi-Regular.woff") format("woff"),
+//     url("../fonts/Makdessi-Regular.ttf") format("truetype");
+
+//   font-weight: 300;
+//   font-style: normal;
+//   font-display: swap;
+// }
+// html,
+// body {
+//   scroll-behavior: auto !important;
+// }

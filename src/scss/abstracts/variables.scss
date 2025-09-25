@@ -1,0 +1,74 @@
+// @import "./bootstrap/mixins";
+
+// $body-bg: white !default;
+// $body-color: black !default;
+
+// // Link color
+// // $link-color: $primary !default;
+// // $link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
+
+// $font-size-base: 1rem !default;
+
+// $primary: #a2ff00; // Change primary color
+// $secondary: black; // Optional: Keep or modify other colors
+// $success: #28a745;
+// $info: #17a2b8;
+// $warning: #ffc107;
+// $danger: #dc3545;
+// $light: #f8f9fa;
+// $dark: #343a40;
+
+// $primary-100: #97d700;
+// $grey-light: #f5f5f5;
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 1024px,
+//   xl: 1200px,
+//   xxl: 1440px,
+//   xxxl: 1600px,
+// ) !default;
+// // Customize the container max-widths
+// $container-max-widths: (
+//   sm: 100%,
+//   md: 100%,
+//   lg: 100%,
+//   xl: 100%,
+//   xxl: 1440px,
+//   xxxl: 1600px,
+// ) !default;
+
+// $font-family-sans-serif: "Cairo", sans-serif;
+// $line-height-base: 1.6875 !default;
+// $paragraph-margin-bottom: 1rem !default;
+
+// $h1-font-size: $font-size-base * 5 !default;
+// $h2-font-size: $font-size-base * 3.5 !default;
+// $h3-font-size: $font-size-base * 2.375 !default;
+// $h4-font-size: $font-size-base * 2 !default;
+// $h5-font-size: $font-size-base * 1.375 !default;
+// $h6-font-size: $font-size-base !default;
+
+// $headings-font-weight: 700 !default;
+// // $headings-line-height: 1.2 !default;
+// // @include media-breakpoint-down(xl) {
+// //   $h1-font-size: $font-size-base * 3.75 !default;
+// //   $h2-font-size: $font-size-base * 2.125 !default;
+
+// // }
+// $grid-gutter-width: 1.875rem !default;
+// @include media-breakpoint-down(lg) {
+//   h2 {
+//     font-size: calc(34 / 16) + rem;
+//     line-height: calc(44 / 34);
+//   }
+//   h3 {
+//     font-size: calc(30 / 16) + rem;
+//     line-height: calc(38 / 30);
+//   }
+// }
+
+// base path for images
+$base-image-path: "../images/";

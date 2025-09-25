@@ -1,0 +1,45 @@
+<!-- Modal video -->
+<div class="modal fade video" id="videoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-video">
+        <div class="modal-content" data-video-ap="0">
+            <a href="#" class="btn-close" data-bs-dismiss="modal"></a>
+            <iframe src=""
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+        </div>
+    </div>
+</div>
+
+<a href="#" class="top-btn"> <span><i class="icon-ibsa-arrow-top"></i></span>
+    <p>Back to top</p>
+</a>
+<script> if ($('.show-modal').length) { $('.show-modal').each(function () { let link = $(this).attr('href'); let modalContent = "<div class='content-modal'><h3>State lasciando il sito IBSAgroup.com</h3><p>Questo link ti porter&agrave; ad un altro sito web in cui la Privacy Policy e Cookie Policy di questo sito web non si applicano. Di conseguenza, non siamo responsabili per le tue interazioni con tale sito web.</p> <a href='" + link + "' class='btn btn-white' target='_blank'>Procedi</a></div>"; $(this).attr('data-src', modalContent); $(this).attr('data-type', 'html'); $(this).attr('data-title', 'IBSAgroup.com'); }); }; const options = { keyboard: true }; document.querySelectorAll('.show-modal').forEach((el) => el.addEventListener('click', (e) => { e.preventDefault(); const lightbox = new Lightbox(el, options); lightbox.show(); })); </script>
+<script
+    src="https://www.ibsagroup.com/it/.resources/ibsa-templating-light/webresources/js/bootstrap.bundle.min~2025-04-16-10-02-21-000~cache.js"></script>
+<script
+    src="https://www.ibsagroup.com/it/.resources/ibsa-templating-light/webresources/js/ls.respimg.min~2025-04-16-10-02-21-000~cache.js"></script>
+<script
+    src="https://www.ibsagroup.com/it/.resources/ibsa-templating-light/webresources/js/ls.bgset.min~2025-04-16-10-02-21-000~cache.js"></script>
+<script
+    src="https://www.ibsagroup.com/it/.resources/ibsa-templating-light/webresources/js/lazysizes.min~2025-04-16-10-02-21-000~cache.js"></script>
+<script
+    src="https://www.ibsagroup.com/it/.resources/ibsa-templating-light/webresources/js/swiper-bundle.min~2025-04-16-10-02-21-000~cache.js"></script>
+<script
+    src="https://www.ibsagroup.com/it/.resources/ibsa-templating-light/webresources/js/jquery.matchHeight~2025-04-16-10-02-21-000~cache.js"></script>
+<script
+    src="https://www.ibsagroup.com/it/.resources/ibsa-templating-light/webresources/js/jquery.mCustomScrollbar.concat.min~2025-04-16-10-02-21-000~cache.js"></script>
+<script
+    src="https://www.ibsagroup.com/it/.resources/ibsa-templating-light/webresources/js/index.bundle.min~2025-04-16-10-02-21-000~cache.js"></script>
+<script
+    src="https://www.ibsagroup.com/it/.resources/ibsa-templating-light/webresources/js/select2.full.min~2025-04-16-10-02-21-000~cache.js"></script>
+<script
+    src="https://www.ibsagroup.com/it/.resources/ibsa-templating-light/webresources/js/main~2025-04-16-10-04-58-000~cache.js"></script>
+<!--Scripts -->
+
+<!-- New JS files -->
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="./js/newScript.js"></script>
+</body>
+
+</html>

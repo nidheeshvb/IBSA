@@ -1,0 +1,29 @@
+/*addtional styles for header*/
+.header.lp-header .header-logo {
+  height: 63px;
+}
+@media (min-width: 1200px) {
+  .header.lp-header .header-logo {
+    width: 264px;
+    margin-top: 37px;
+  }
+}
+@media (max-width: 1024px) {
+  .header.lp-header .header-logo {
+    height: auto;
+    max-width: 190px;
+    margin-top: 26px;
+    padding-bottom: 10px;
+  }
+  .header.lp-header .header-logo img,
+  .header.lp-header .header-logo picture {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header.lp-header {
+    padding-bottom: 15px;
+  }
+}

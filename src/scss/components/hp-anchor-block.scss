@@ -1,0 +1,124 @@
+.section-anchor-block {
+  padding: 11px 8px;
+  background: linear-gradient(90deg, #7ab3d9 0%, #002f6c 51.44%, #42c7db 100%);
+  margin-top: -1px;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+  transform: translateY(0);
+  overflow: visible;
+  z-index: 2;
+
+  &.sticky {
+    position: fixed;
+    z-index: 5;
+    animation: slideDown 0.3s ease forwards;
+  }
+}
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.scroll-nav {
+  display: flex;
+  ul {
+    margin: 0 auto;
+    padding: 0;
+    width: auto;
+    li {
+      width: auto;
+      display: inline-block;
+      margin: 7px 0;
+      &:not(:last-child) {
+        margin-right: 7px;
+      }
+      a {
+        display: inline-block;
+        color: white;
+        border: 2px solid #002f6c;
+        background: #002f6c;
+        padding: 6px 15px;
+        font-size: calc(11 / 16) + rem;
+        line-height: calc(26 / 11);
+        letter-spacing: 0.33px;
+        // text-transform: uppercase;
+        font-weight: 700;
+        transition: all 0.3s;
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          width: 0%;
+          left: -2px;
+          bottom: -2px;
+          background-color: #fff;
+          height: 1px;
+          transition: all 0.3s;
+        }
+        &:hover,
+        &:focus,
+        &.btn-active {
+          &:after {
+            width: Calc(100% + 4px);
+          }
+        }
+        @media only screen and (max-width: 1023px) {
+          padding: 3px 10px;
+          font-size: calc(10 / 16) + rem;
+          line-height: calc(20 / 11);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .anchors-header-toggle {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .anchors-header-toggle {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    border: 2px solid #002f6c;
+    background: #002f6c;
+    padding: 6px 15px;
+    font-size: 0.6875rem;
+    line-height: 2.3636363636;
+    letter-spacing: 0.33px;
+    text-transform: uppercase;
+    font-weight: 700;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    position: relative;
+    cursor: pointer;
+    .arrow {
+      transition: transform 0.3s ease;
+    }
+  }
+  nav.scroll-nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(90deg, #7ab3d9 0, #002f6c 51.44%, #42c7db 100%);
+    top: 100%;
+    border-top: 1px solid #70a8d0;
+    display: none;
+    &.open {
+      display: flex;
+    }
+  }
+
+  .anchors-header-toggle.open .arrow {
+    transform: rotate(180deg);
+  }
+}

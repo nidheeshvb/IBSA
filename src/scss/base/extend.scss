@@ -1,0 +1,19 @@
+%flex-basic {
+  display: flex;
+  flex-wrap: wrap;
+}
+%flex-basic-with-width {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+}
+%block-with-width {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+%flexcenter {
+  justify-content: center;
+  align-items: center;
+}

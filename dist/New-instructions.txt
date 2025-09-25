@@ -1,0 +1,5 @@
+Files to replace -
+1. newScript.js
+2. new-styles.css
+
+

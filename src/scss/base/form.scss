@@ -1,0 +1,247 @@
+// .form__block {
+//   position: relative;
+//   display: block;
+//   float: left;
+//   width: 100%;
+//   max-width: 100%;
+//   margin-bottom: 20px;
+// }
+
+// form {
+//   display: flex;
+//   flex-wrap: wrap;
+//   width: 100%;
+//   max-width: 100%;
+// }
+
+// label {
+//   display: block;
+//   width: 100%;
+//   margin-bottom: 10px;
+//   color: $label-color;
+//   font-size: $label-font-size;
+//   // font-weight: $label-font-weight;
+//   // font-family: $label-font-family;
+//   font-style: $label-font-style;
+//   line-height: $label-line-height;
+// }
+
+// textarea,
+// input[type="text"],
+// input[type="email"],
+// input[type="password"],
+// input[type="search"],
+// select {
+//   display: block;
+//   width: 100%;
+//   padding: 10px;
+//   color: $text-box-color;
+//   // font-family: $text-box-font-family;
+//   font-size: $text-box-font-size;
+//   // font-weight: $text-box-font-weight;
+//   line-height: $text-box-line-height;
+//   font-style: $text-box-font-style;
+//   border-color: $text-box-border-color;
+//   border-radius: $text-box-border-radius;
+//   border-width: $text-box-border-width;
+//   border-style: $text-box-border-style;
+//   box-shadow: none;
+// }
+
+// textarea {
+//   width: 100% !important;
+// }
+
+// /* Checkbox Styles */
+// input[type="checkbox"] {
+//   padding: 0;
+//   height: initial;
+//   width: initial;
+//   margin-bottom: 0;
+//   display: none;
+//   cursor: pointer;
+// }
+
+// input[type="checkbox"] + label {
+//   display: inline-block;
+//   width: auto;
+//   max-width: 100%;
+//   cursor: pointer;
+// }
+
+// input[type="checkbox"] + label:before {
+//   content: "";
+//   -webkit-appearance: none;
+//   background-color: $checkbox-bg;
+//   border-color: $checkbox-border-color;
+//   border-width: $checkbox-border-width;
+//   border-style: $checkbox-border-style;
+//   padding: 10px;
+//   display: inline-block;
+//   position: relative;
+//   vertical-align: middle;
+//   cursor: pointer;
+//   margin-right: 10px;
+// }
+
+// input[type="checkbox"]:checked + label:after {
+//   /* Visual */
+//   content: "";
+//   display: block;
+//   position: absolute;
+//   top: 5px;
+//   left: 9px;
+//   width: 7px;
+//   height: 12px;
+//   border: $checkbox-border-tick;
+//   border-width: 0 2px 2px 0;
+//   -webkit-transform: rotate(45deg);
+//   transform: rotate(45deg);
+// }
+
+// /* Radio Button Styles */
+// input[type="radio"] {
+//   padding: 0;
+//   height: initial;
+//   width: initial;
+//   margin-bottom: 0;
+//   display: none;
+//   cursor: pointer;
+// }
+
+// input[type="radio"] + label {
+//   display: inline-block;
+//   width: auto;
+//   max-width: 100%;
+
+//   cursor: pointer;
+// }
+
+// input[type="radio"] + label:before {
+//   content: "";
+//   -webkit-appearance: none;
+//   background-color: $radiobox-bg;
+//   border-color: $radiobox-border-color;
+//   border-width: $radiobox-border-width;
+//   border-style: $radiobox-border-style;
+//   padding: 10px;
+//   border-radius: 50px;
+//   display: inline-block;
+//   position: relative;
+//   vertical-align: middle;
+//   cursor: pointer;
+//   margin-right: 10px;
+// }
+
+// input[type="radio"]:checked + label:after {
+//   content: "";
+//   display: block;
+//   position: absolute;
+//   top: 5px;
+//   left: 9px;
+//   width: 7px;
+//   height: 12px;
+//   border: $radiobox-border-tick;
+//   border-width: 0 2px 2px 0;
+//   -webkit-transform: rotate(45deg);
+//   transform: rotate(45deg);
+// }
+
+// /* Custom Select Styles */
+// .custom-select {
+//   position: relative;
+//   width: 100%;
+//   max-width: 100%;
+
+//   .dropdown-arrow {
+//     position: absolute;
+//     right: 7px;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     width: 100%;
+//     max-width: 100%;
+//   }
+
+//   input {
+//     border: 0px;
+//   }
+
+//   .select-box {
+//     display: flex;
+//     align-items: center;
+//     padding: 10px;
+//     padding-right: 10px;
+//     border-color: $text-box-border-color;
+//     border-radius: $text-box-border-radius;
+//     border-width: $text-box-border-width;
+//     border-style: $text-box-border-style;
+//     position: relative;
+//     cursor: pointer;
+//   }
+
+//   .selected-tags {
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 5px;
+//   }
+
+//   .selected-tag {
+//     padding: 3px 8px;
+//     font-size: 12px;
+//     background: $selected-tag-bg;
+//     border-radius: $selected-tag-border-radius;
+//   }
+
+//   .select-input {
+//     color: #000;
+//     // font-family: Arial;
+//     font-size: 1rem;
+//     font-weight: 500;
+//     line-height: normal;
+//     font-style: normal;
+//     -webkit-box-shadow: none;
+//     box-shadow: none;
+//   }
+
+//   .dropdown {
+//     position: absolute;
+//     top: 100%;
+//     left: 0;
+//     right: 0;
+//     padding: 5px;
+//     max-height: 150px;
+//     border: 1px solid #ccc;
+//     background: white;
+//     display: none;
+//     z-index: 1000;
+//     overflow-y: auto;
+//   }
+
+//   .dropdown-search {
+//     width: 100%;
+//     padding: 5px;
+//     border-bottom: 1px solid #ccc;
+//     box-sizing: border-box;
+//   }
+
+//   .dropdown-options {
+//     list-style: none;
+//     padding: 0;
+//     margin: 0;
+//   }
+
+//   .dropdown-options li {
+//     padding: 5px;
+//     cursor: pointer;
+//   }
+
+//   .dropdown-options li:hover {
+//     background: $dropdown-hover-color-bg;
+//     color: $dropdown-hover-color;
+//   }
+
+//   .dropdown-options li.selected {
+//     background: $dropdown-selected-color-bg;
+//     color: $dropdown-selected-color;
+//   }
+// }

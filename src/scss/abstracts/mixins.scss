@@ -1,0 +1,122 @@
+@use "sass:math";
+
+//1. Clearfix
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+//2.breakpoint Mixin
+@mixin respond-to($breakpoint, $direction: max) {
+  @if $breakpoint == xs {
+    @media only screen and (#{$direction}-width: $breakpoint-xs) {
+      @content;
+    }
+  } @else if $breakpoint == sm {
+    @media only screen and (#{$direction}-width: $breakpoint-sm) {
+      @content;
+    }
+  } @else if $breakpoint == md {
+    @media only screen and (#{$direction}-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media only screen and (#{$direction}-width: $breakpoint-lg) {
+      @content;
+    }
+  } @else if $breakpoint == xl {
+    @media only screen and (#{$direction}-width: $breakpoint-xl) {
+      @content;
+    }
+  }
+}
+
+//3. centering elements
+@mixin center($position) {
+  position: absolute;
+
+  @if $position== "vertical" {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  } @else if $position== "horizontal" {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%);
+  } @else if $position== "both" {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+//4. font size
+@function calculateRem($size) {
+  $remSize: math.div($size, 16px); // Use math.div() instead of /
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+@mixin line-height($font-size, $line-height-px) {
+  $line-height-percent: math.div($line-height-px, $font-size) * 100;
+  line-height: math.div($line-height-percent, 100%) * 1%; // Convert percentage to a valid CSS value
+}
+
+// 5. placeholders
+@mixin placeholder {
+  ::-webkit-input-placeholder {
+    @content;
+  }
+
+  :-moz-placeholder {
+    @content;
+  }
+
+  ::-moz-placeholder {
+    @content;
+  }
+
+  :-ms-input-placeholder {
+    @content;
+  }
+}
+
+//6. Font-face mixin
+
+@mixin font-face(
+  $font-family,
+  $font-path,
+  $font-weight: normal,
+  $font-style: normal
+) {
+  @font-face {
+    font-family: #{$font-family};
+    src: url("#{$font-path}.eot");
+    src: url("#{$font-path}.eot?#iefix") format("embedded-opentype"),
+      url("#{$font-path}.woff2") format("woff2"),
+      url("#{$font-path}.woff") format("woff"),
+      url("#{$font-path}.ttf") format("truetype"),
+      url("#{$font-path}.svg#{$font-family}") format("svg");
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}
+
+// card grid gutter mixin
+
+// Mixins

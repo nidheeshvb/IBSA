@@ -1,0 +1,37 @@
+Project Handover Document
+
+Project Summary:
+This document outlines the updates and additions made to the frontend codebase as part of the recent template enhancement work. All changes have been integrated into the existing project structure, with a focus on extending current functionality and maintaining visual consistency with the original design.
+
+What’s Included
+----------------------------------------------------------------------------------------------------------
+
+Updated/Added Files:
+
+CSS:
+
+new-styles.css: Contains additional styling rules used for the new templates. It complements the existing CSS files without overriding foundational styles.
+
+JavaScript:
+
+newScript.js: Handles custom interactivity and dynamic behaviors related to the new template features.
+
+External Libraries (via CDN):
+
+The following third-party JavaScript libraries are included for layout and image handling purposes:
+
+imagesloaded.pkgd.min.js: Ensures layout adjustments after image loading.
+
+masonry.pkgd.min.js: Used for responsive grid layout functionality.
+
+These are included via CDN and should be referenced in the HTML before any scripts that depend on them.
+
+
+Development Notes
+--------------------------------------------------------
+
+We have extended the existing codebase rather than starting from scratch, ensuring full compatibility with previous components and structure.
+
+The button styles, carousel, and layout components continue to use the original styles as instructed, ensuring design consistency.
+
+All new additions are modular and scoped to prevent conflicts with existing functionality.
